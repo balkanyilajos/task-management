@@ -1,0 +1,16 @@
+services:
+
+  api:
+      image: task-manager-api
+      container_name: task-manager-api
+      build:
+        context: .
+        dockerfile: Dockerfile
+      working_dir: /mnt/files/backend
+      volumes:
+        - ./src:/mnt/files/backend
+      ports:
+        - 80:8000
+      environment:
+        - PYTHONPATH=/mnt/files/backend
+      command: sh -c "uvicorn server:app --reload --host 0.0.0.0 --port 8000"
