@@ -156,13 +156,13 @@ Ensure that Docker and Docker Compose are installed and running on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/task-management-api.git
+   git clone https://github.com/balkanyilajos/task-management
    ```
 
 2. Run the API:
 
    ```bash
-   cd task-management-api
+   cd task-management
    docker-compose up
    ```
 
