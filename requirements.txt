@@ -3,4 +3,5 @@ uvicorn[standard] == 0.34.0
 
 sqlalchemy == 2.0.38
 numpy == 2.2.3
-scikit-learn
+pandas == 2.2.3
+scikit-learn == 1.6.1
